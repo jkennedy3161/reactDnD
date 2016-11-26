@@ -1,5 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/app';
+import Ticket from './components/ticket';
+import Square from './components/square';
 
-render(<App />, document.getElementById('app'));
+render(
+  <Square black>
+    <Ticket />
+  </Square>,
+  document.getElementById('app')
+);
