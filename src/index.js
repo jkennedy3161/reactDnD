@@ -1,11 +1,8 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Ticket from './components/ticket';
-import Square from './components/square';
+import ReactDOM from 'react-dom';
+import Board from './components/board';
 
-render(
-  <Square black>
-    <Ticket />
-  </Square>,
+ReactDOM.render(
+  <Board ticketPosition={[4,7]} />,
   document.getElementById('app')
 );
