@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "webpack-dev-server"
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development webpack-dev-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "react": "^15.4.1",
     "react-dnd": "^2.1.4",
     "react-dnd-html5-backend": "^2.1.2",
