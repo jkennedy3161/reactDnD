@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Board from './components/board';
+import { observe } from './components/game';
 
-ReactDOM.render(
-  <Board ticketPosition={[4,7]} />,
-  document.getElementById('app')
+const rootEl = document.getElementById('app');
+
+observe(ticketPosition =>
+  ReactDOM.render(
+    <Board ticketPosition={ticketPosition} />,
+    rootEl
+  )
 );
