@@ -21,7 +21,7 @@ export class Ticket extends Component {
     return connectDragSource(
       <div style={{
         opacity: isDragging ? 0.5 : 1,
-        fontSize: 12,
+        fontSize: 10,
         cursor: 'move'
       }}>
         💳
